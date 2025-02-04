@@ -1,0 +1,49 @@
+class demoarray
+{
+  public void arr()
+  {
+      int num[][]=new int[3][4];
+     
+// this loop for assign the number to array
+      for(int i=0; i<3; i++) // it for row
+      {
+          for(int j =0 ; j<4 ; j ++ ) // it for column
+          {
+              num[i][j]=(int)(Math.random()  * 10); // use a math function to choose a random number
+
+          }
+
+      }
+     
+// this loop for print the number of array
+      for(int i=0; i<3; i++) // for row
+      {
+          for(int j =0 ; j<4 ; j ++ )  // for column
+          {
+              System.out.print(num[i][j]+" ");
+          }
+          System.out.println();
+      }
+
+//      for(int n[]:num // enhanced for loop
+//           ) {
+//
+//
+//
+//          for(int m : n)
+//          {
+//              System.out.print(m+" ");
+//          }
+//          System.out.println();
+//
+//      }
+  }
+
+}
+public class multidimentionalarray {
+    public static void main(String[] args)
+    {
+        demoarray obj = new demoarray();
+        obj.arr();
+    }
+}
