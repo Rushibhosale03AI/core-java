@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class taxcalculate {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your Inncome:");
+        double inncome = sc.nextDouble();
+        double tax;
+        if(inncome <1200000)
+        {
+            tax = 0.00 * inncome;
+            System.out.println("You Paid inncome tax is:"+ tax);
+        }
+        else if(inncome>1200000 && inncome<1600000)
+        {
+            tax = 0.15 * inncome;
+            System.out.println("You Paid inncome tax is:"+ tax);
+        }
+        else if (inncome>1600001 && inncome <2000000) {
+
+            tax =0.20 * inncome;
+            System.out.println("You Paid inncome tax is:"+ tax);
+        } else if (inncome>2000001 && inncome<2400000) {
+
+            tax =0.20 * inncome;
+            System.out.println("You Paid inncome tax is:"+ tax);
+
+        }
+       else
+        {
+            tax =0.30 * inncome;
+            System.out.println("You Paid inncome tax is:"+ tax);
+        }
+
+    }
+
+    }
+
