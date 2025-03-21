@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class double_array {
+    public static void main(String[] args) {
+            int size;
+            Scanner sc = new Scanner(System.in);
+            System.out.println("enter size of array:");
+            size = sc.nextInt();
+            double doubles[] = new double[size];
+            if (size < 0) {
+                System.out.println("invalid input");
+            } else if (size == 0) {
+                System.out.println("software exit");
+            } else {
+                for (int i = 0; i < size; i++) {
+                    System.out.println("enter elements of array:");
+
+                    doubles[i] = sc.nextDouble();
+                }
+                for (int i = 0; i < size; i++) {
+                    System.out.println(doubles[i]);
+                }
+            }
+        }
+    }
